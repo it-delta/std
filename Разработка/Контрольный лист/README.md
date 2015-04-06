@@ -1,6 +1,6 @@
 # Контрольный лист для программиста
 
-| First Header  | Second Header |
+| Действие  | Дата | Роспись |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Присутствие страницы 404 |  |  |
+| Пользователя admin и manager  | |
