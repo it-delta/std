@@ -76,7 +76,8 @@ function foo()
 }
  
 // условное объявление -- это НЕ побочный эффект
-if (! function_exists('bar')) {
+if (! function_exists('bar')) 
+{
     function bar()
     {
         // тело функции
