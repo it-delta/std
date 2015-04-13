@@ -46,39 +46,51 @@ js/ ---- Папка для своих скриптов
 	
 ## Структура папок для less
 
+Для больших и средних проектов:
+
 ```  
 less/
-    styles.less
+    styles.less ---- Точка входа, здесь только подключаются все файлы, в самом файле стили не пишутся
     partials/
-        variables.less
-        mixins.less
-        helpers.less
-        elements.less
+        variables.less ---- Все переменные
+        mixins.less ---- Миксины помошники, используемые только в less
+        helpers.less ---- Классы помошники используемые при верстке
+        elements.less ---- Универсальные элементы в верстке, например кнопки, формы и т.д.
         
-        pages/
-            home.less
+        pages/ ---- Страницы проекта
+            home.less ---- страница проекта, в ней не пишуться стили только подключаются из одноименной папки
             catalog-categories.less
             catalog-category.less
             catalog-detail.less
             
             /home/
-                slider.less
+                slider.less - блок который относится только к странице home
             /catalog-categories/
             /catalog-category/
             /catalog-detail/
             
-        template/
-            header.less
+        template/ ---- в этой папке файлы которые содержат блоки актуальны для всех страниц проеккта
+            header.less ---- файл описывающий блоки шапки сайта
             aside-left.less
             footer.less
             
         либо
-            template/
-                blocks/
-                    header.less
-                    header/
-                        topmenu.less
-                        search.less
-                elements/
-                    logo.less
+            
+		template/ ---- в этой папке файлы с блоками которые актуальны для всех страниц проеккта
+			topmenu.less ---- блок верхнего меню
+			search.less
+```
+
+Для маленьких проектов:
+
+```  
+less/
+    styles.less ---- Точка входа, здесь только подключаются все файлы, в самом файле стили не пишутся
+    partials/
+        variables.less ---- Все переменные
+        mixins.less ---- Миксины помошники, используемые только в less
+        helpers.less ---- Классы помошники используемые при верстке
+        elements.less ---- Универсальные элементы в верстке, например кнопки, формы и т.д.
+        
+        styles.less ---- файл со стилями для всего проекта
 ```
