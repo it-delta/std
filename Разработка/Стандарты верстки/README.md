@@ -37,7 +37,7 @@ $('.js-tab__click').on('click', function() {
 
 
 - js/ `Папка для своих скриптов`
-⋅⋅* jquery/
+--* jquery/
 - plugins/
 - pluginName.js - `плагин`
 - init.js `точка инициализации фраимворка или библиотеки`
